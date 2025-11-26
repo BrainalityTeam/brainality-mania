@@ -13,6 +13,7 @@ class Main extends Sprite
 	{
 		#if MODS_ALLOWED
 		Mods.loadMods();
+		#end
 		super();
 		addChild(new FlxGame(0, 0, PlayState));
 	}
