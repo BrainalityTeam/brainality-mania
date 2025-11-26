@@ -1,8 +1,5 @@
 package states.play;
-
-import flixel.FlxState;
-
-class PlayState extends FlxState
+class PlayState extends MusicState;
 {
 	override public function create()
 	{

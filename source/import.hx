@@ -1,3 +1,4 @@
 import flixel.FlxSprite;
-import backend.CoolState;
+import flixel.FlxState;
+import backend.MusicState;
 import backend.Paths;

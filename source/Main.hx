@@ -7,6 +7,8 @@ import openfl.display.Sprite;
 import backend.modding.Mods;
 #end
 
+import states.play.PlayState;
+
 class Main extends Sprite
 {
 	public function new()
