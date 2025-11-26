@@ -5,7 +5,7 @@ class MusicState extends FlxState
     public var currentStep = 0.0;
     public var currentBeat = 0.0;
     public var currentSection = 0.0;
-    public var currentBPM = 120;
+    public var currentBPM = 120.0;
     public var bpmMap:Map<Float, Float> = new Map(); // song time > BPM
 
     public var time = 0.0;
