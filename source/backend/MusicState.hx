@@ -6,7 +6,7 @@ class MusicState extends FlxState
     public var currentBeat = 0.0;
     public var currentSection = 0.0;
     public var currentBPM = 120.0;
-    public var bpmMap:Map<Float, Float> = new Map(); // song time > BPM
+    //var bpmMap = new Map<Float, Float>(); // song time > BPM
 
     public var time = 0.0;
 
@@ -16,7 +16,7 @@ class MusicState extends FlxState
 
     override public function new()
     {
-        bpmMap.set(0, currentBPM);
+        //bpmMap.set(0, currentBPM);
         super();
     }
 
@@ -30,8 +30,8 @@ class MusicState extends FlxState
         time += elapsed;
 
         var bpm = currentBPM;
-        for (beatTime in bpmMap.keys())
-            if (time >= beatTime) bpm = bpmMap.get(beatTime);
+        //for (beatTime in bpmMap.keys())
+            //if (time >= beatTime) bpm = bpmMap.get(beatTime);
 
         var spb = 60 / bpm;
 
