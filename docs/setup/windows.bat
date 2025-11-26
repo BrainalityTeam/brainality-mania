@@ -19,6 +19,7 @@ haxelib set flixel-tools 1.5.1
 
 haxelib install flixel-ui 2.5.0
 haxelib set flixel-ui 2.5.0
-
+haxelib install openfl 9.3.2
+haxelib set openfl 9.3.2
 echo Done installing all libraries.
 pause
