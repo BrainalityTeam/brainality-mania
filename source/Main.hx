@@ -2,7 +2,7 @@ package;
 
 import flixel.FlxGame;
 import openfl.display.Sprite;
-
+import openfl.display.FPS;
 #if MODS_ALLOWED
 import backend.modding.Mods;
 #end
@@ -17,6 +17,6 @@ class Main extends Sprite
 		Mods.loadMods();
 		#end
 		super();
-		addChild(new FlxGame(0, 0, PlayState));
+		ddChild(new FPS(10, 3, 0xFFFFFF));
 	}
 }
