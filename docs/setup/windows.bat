@@ -21,5 +21,7 @@ haxelib install flixel-ui 2.5.0
 haxelib set flixel-ui 2.5.0
 haxelib install openfl 9.3.2
 haxelib set openfl 9.3.2
+haxelib git hscript-improved https://github.com/FNF-CNE-Devs/hscript-improved.git
+haxelib set hscript-improved git
 echo Done installing all libraries.
 pause
