@@ -31,7 +31,7 @@ class PlayState extends MusicState
 
 	override public function create()
 	{
-		CoolUtil.playMusic(Paths.getSong(SONG.title.toLowerCase(), SONG.title.toLowerCase()));
+		CoolUtil.playSound(Paths.getSong(SONG.title.toLowerCase(), SONG.title.toLowerCase()));
 		super.create();
 	}
 
