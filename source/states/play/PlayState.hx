@@ -25,6 +25,7 @@ class PlayState extends MusicState
 		else
 			SONG = Song.parseSong(args.name, '${args.name}-${args.difficulty.toLowerCase()}');
 
+		trace('Loaded song: ${SONG.title}');
 		super();
 	}
 
