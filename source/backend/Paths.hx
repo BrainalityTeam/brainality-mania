@@ -9,8 +9,8 @@ class Paths
     public static function getImage(path:String, parentFolder = 'shared')
         return 'assets/${parentFolder}/${path}';
 
-    public static function getSong(path:String):String
-        return 'assets/songs/${path}';
+    public static function getSong(path:String, songName:String):String
+        return 'assets/songs/${path}/${songName}.ogg';
 
     public static function getChart(songName:String, ?fileName:String = 'chart', ?parentFolder:String = 'shared'):String
         return 'assets/${parentFolder}/data/${songName}/${fileName}.json';
