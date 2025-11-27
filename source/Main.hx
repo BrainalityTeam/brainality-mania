@@ -4,7 +4,7 @@ import flixel.FlxGame;
 import openfl.display.Sprite;
 import openfl.display.FPS;
 
-import states.play.PlayState;
+import states.menus.TitleState;
 
 import debug.FPSCounter;
 
@@ -14,7 +14,7 @@ class Main extends Sprite
 	{
 		super();
 
-		addChild(new FlxGame(0, 0, PlayState, 60, 60, true));
+		addChild(new FlxGame(0, 0, TitleState, 60, 60, true));
 		addChild(new FPSCounter(10, 3, 0xFFFFFF));
 	}
 }

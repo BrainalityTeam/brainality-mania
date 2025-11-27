@@ -1,4 +1,5 @@
-package objects;
+package objects.play;
+
 typedef NoteData = 
 {
     var strumTime:Float;
@@ -16,6 +17,8 @@ class Note extends FlxSprite
         this.row = row;
         this.downscroll = downscroll;
         this.scrollSpeed = scrollSpeed;
+
+        loadGraphic(128, 128, FlxColor.WHITE);
         
         super(x, y);
     }

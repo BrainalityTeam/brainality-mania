@@ -1,7 +1,7 @@
 package backend.data;
 
 import backend.data.Section;
-import objects.Note;
+import objects.play.Note;
 
 import haxe.Json;
 
