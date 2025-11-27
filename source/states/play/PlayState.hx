@@ -3,7 +3,7 @@ import backend.MusicState;
 import backend.CoolUtil;
 import flixel.FlxCamera;
 //import flixel.group.FlxTypedGroup;
-
+import backend.script.*;
 import objects.play.*;
 
 import backend.data.Song;
