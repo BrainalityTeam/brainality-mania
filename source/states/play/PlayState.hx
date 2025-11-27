@@ -31,7 +31,7 @@ class PlayState extends MusicState
 
 	override public function create()
 	{
-		FlxG.sound.playMusic(Paths.getSong(SONG.title.toLowerCase(), SONG.title.toLowerCase()));
+		CoolUtil.playMusic(Paths.getSong(SONG.title.toLowerCase(), SONG.title.toLowerCase()));
 		super.create();
 	}
 
