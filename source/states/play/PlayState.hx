@@ -2,7 +2,7 @@ package states.play;
 import backend.MusicState;
 
 import flixel.FlxCamera;
-import flixel.group.FlxTypedGroup;
+//import flixel.group.FlxTypedGroup;
 
 import objects.play.*;
 
@@ -14,16 +14,18 @@ typedef PlayArgs = {
 }
 class PlayState extends MusicState
 {
-	var notes:FlxTypedGroup<Note> = new FlxTypedGroup();
+	//var notes:FlxTypedGroup<Note> = new FlxTypedGroup();
 
 	var SONG:SongData = null;
 
 	override public function new(args:PlayArgs)
 	{
 		if (args.difficulty == null || args.difficulty.toLowerCase() == 'normal')
-			SONG = Song.getChart(SONG, SONG);
+			SONG = Song.parseSong(args.name, args.name);
 		else
-			SONG = Song.getChart(SONG, '${SONG}-${args.difficulty.toLowerCase()}');
+			SONG = Song.parseSong(args.name, '${args.name}-${args.difficulty.toLowerCase()}');
+
+		super();
 	}
 
 	override public function create()

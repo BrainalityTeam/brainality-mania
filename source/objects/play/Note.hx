@@ -18,7 +18,7 @@ class Note extends FlxSprite
         this.downscroll = downscroll;
         this.scrollSpeed = scrollSpeed;
 
-        loadGraphic(128, 128, FlxColor.WHITE);
+        makeGraphic(128, 128, FlxColor.WHITE);
         
         super(x, y);
     }

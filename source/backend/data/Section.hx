@@ -1,5 +1,6 @@
 package backend.data;
-import objects.Note;
+
+import objects.play.Note;
 
 typedef SectionData =
 {

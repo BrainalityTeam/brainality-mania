@@ -1,5 +1,6 @@
 package states.menus;
 
+import states.play.PlayState.PlayArgs;
 class TitleState extends MusicState
 {
     override public function create()
@@ -21,7 +22,10 @@ class TitleState extends MusicState
 
         if (FlxG.keys.justPressed.ENTER)
         {
-            FlxG.switchState(new PlayState({'Test'}));
+            var song:PlayArgs = {
+                name: 'Test'
+            }
+            FlxG.switchState(new PlayState(song));
         }
     }
 }
