@@ -27,5 +27,8 @@ class TitleState extends MusicState
             }
             FlxG.switchState(new PlayState(song));
         }
+
+        if (FlxG.keys.justPressed.SEVEN)
+            FlxG.switchState(new states.editors.ChartingEditorState());
     }
 }
