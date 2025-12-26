@@ -1,1 +1,3 @@
-this game is cancelled sadly, cause brainy hates me.
+Brainality Mania is a game using haxe's popular project, haxeflixel.
+<img width="230" height="230" alt="image" src="https://github.com/user-attachments/assets/7f5b20a0-2cae-4fd1-adaf-f1840c165f67" />
+
